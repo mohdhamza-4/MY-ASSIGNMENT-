@@ -1,1 +1,1 @@
-In this Repository you will find <b>Assignment </b> that is given by <b>My Teacher Mr Anand Singh Yadav</b>
+In this Repository you will find <b>Assignments </b> that is given by <i>my teacher</i> <b>Mr Anand Singh Yadav</b>

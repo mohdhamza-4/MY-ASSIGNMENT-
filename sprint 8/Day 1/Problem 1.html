@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Problem 1</title>
+
+  <style>
+    body{
+      margin: 0;
+    }
+  
+    #main-container{
+     height: 490px;
+     background-color: rgba(213, 245, 246, 0.46);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-evenly;
+    }
+
+  
+    #main-container>div>h1{
+      font-size: 28px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 0px;
+    }
+  
+
+    #main-container>div{
+      width: 62%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #main-container>div>div{
+      height: 275px;
+      width: 210px;
+      border-radius: 10px;
+      padding: 22px;
+      background-color: white;
+    }
+    
+    #main-container>div>div>img{
+      width: 208px;
+      height: 138px;
+      border-radius: 15px;
+      padding: 6px;
+    } 
+
+    #main-container>div>div :nth-child(2){
+      font-size: 12px;
+      color: blue;
+      margin: 8px 0 0 0;
+    }
+    
+    #main-container>div>div :nth-child(3){
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 15px;
+      margin: 8px 0 0 0;
+    }
+
+    #main-container>div>div :nth-child(4){
+      font-size: 13px;
+      color: grey;
+    }
+
+    #main-container>div>a>button{
+      color: red;
+      background-color: transparent;
+      border: 1px solid rgba(255, 0, 0, 0.285);
+      border-radius: 5px;
+      padding: 8px 8px;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #container-2{
+      height: 220px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+    }
+
+    #container-2>h1{
+      font-size: 28px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    #container-2>div{
+      width: 58%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      
+    }
+
+    #container-2>div>div>img{
+      border: 1px solid rgba(128, 128, 128, 0.404);
+      border-radius: 10px;
+      width: 265px;
+      height: 109px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div id="main-container">
+    <div>
+      <h1>Masai in the News</h1>
+    </div>
+
+    <div>
+      <div>
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/ET_3754cc10ec.png" alt="">
+        <p>26 Oct 2021</p>
+        <p>Edtech startup Masai School acquires data analytics firm Prepleaf for $1 million.</p>
+        <p>With their latest acquisition, Masai moves one step closer to becoming...</p>
+      </div>
+
+      <div>
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/money_Control_c3e25f5ceb.png" alt="">
+        <p>21 Dec 2021</p>
+        <p>Kunal Shah, Vijay Shekhar Sharma, Amrish Rau among 21 angel investors in Masai School</p>
+        <p>Masai School is aiming to expand to 20 smaller cities by March 2022 and exp...</p>
+      </div>
+      <div>
+        <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/vccircle_6ef779c958.png" alt="">
+        <p>18 Aug 2020</p>
+        <p>Unitus Ventures leads pre-Series A funding for coding-focussed Masai School</p>
+        <p>Software coding platform Masai School has raised $2.5 million (Rs 18.6 cror)i...</p>
+      </div>
+    </div>
+
+    <div>
+      <a href=""><button>SEE MORE &nbsp;></button></a>
+    </div>
+    
+  </div>
+
+  <div id="container-2">
+    <h1>Our Inventors, Who Believe In Us</h1>
+    <div>
+    <div><img src="https://www.masaischool.com/images/our-investors/india-q-borderless.svg" alt=""></div>
+    <div><img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt=""></div>
+    <div><img src="https://www.masaischool.com/images/our-investors/capria-logo.svg" alt=""></div>
+  </div>
+  </div>
+
+  
+</body>
+</html>

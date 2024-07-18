@@ -12,85 +12,114 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-    #main-container {
+    #main-container-1 {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 50px;
     }
 
-    #main-container>div>p {
-      padding: 15px;
-      color: white;
-      background-color: rgba(27, 125, 253, 0.881);
-      font-size: 25px;
-      font-weight: bold;
+    #main-container-1>div~div{
+      padding: 0 15px;
+      display: flex;
+      justify-content: space-between;
+      width: 600px;
+      margin-right: 70px;
+    }
+    #main-container-1 :nth-child(1){
+      height: max-content;
+    }
+    hr{
       margin: 0;
     }
+    
+    #main-container-1>div>img {
+      height: 60px;
+    }
 
-    #main-container>div>a {
+    #main-container-1>div>a {
       color: black;
       font-family: Arial, Helvetica, sans-serif;
       text-decoration: none;
-      font-size: large;
+      font-size: 15px;
+      font-weight: 600;
     }
 
-    #main-container>div~div {
-      padding: 0 15px;
+    
+
+    
+
+    /* main-container-2 */
+
+    #main-container-2{
       display: flex;
-      justify-content: space-evenly;
-      width: 800px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0 0 50px;
     }
 
-    #container-2 {
+    #container-1 {
       border: 1px solid;
-      height: 600px;
-      width: 550px;
+      height: 700px;
+      width: 650px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    #container-2 :nth-child(1)>p{
-      color: blue;
-      font-size: small;
-      font-weight: bold;
-    }
-    #container-2>div>p{
-      color: grey;
-      font-size: 20px;
-    }
-    #main-container-2{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+    #container-1>div>h1{
+      font-size: 44px;
+      margin-top: 2px;
     }
 
-    #main-container-3{
+    #container-1 :nth-child(1)>p{
+      color: blue;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0;
+    }
+    #container-1>div>p{
+      color: rgba(128, 128, 128, 0.784);
+      font-size: 23px;
+      line-height: 30px;
+    }
+
+    #container-1>div~div~div>img{
+      height: 110px;
+    }
+
+
+
+    #container-2{
       border: 1px solid;
-      height: 600px;
+      height: 700px;
       width: 550px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-eve;
     }
-    #main-container-3>div{
+    #container-2>div{
       display: flex;
       justify-content: space-evenly;
     }
-    #main-container-3>div>div{
-      height: 200px;
-      width: 150px;
+    #container-2>div>div{
+      height: 250px;
+      width: 200px;
       border: 1px solid;
-      
+      padding: 25px;
     }
+    #container-2>div>div>img{
+      width: 70px;
+    }
+
+
   </style>
 </head>
 
 <body>
-  <div id="main-container">
+  <div id="main-container-1">
     <div>
-      <p>StudyLab</p>
+      <img src="studylab.png" alt="">
     </div>
     <div>
       <a href="">Home</a>
@@ -101,50 +130,59 @@
       <a href="">Contact</a>
     </div>
   </div>
+  <hr>
+  
 
   <div id="main-container-2">
 
-    <div id="container-2">
+    <div id="container-1">
       <div>
         <p>WELCOME TO STUDYLAB</p>
         <h1>We Are StudyLab An Online Learning Center</h1>
       </div>
+
       <div>
         <p>A small river named Duden flows by their place and supplies it with the naecessery regelialia. it is a
           paradisematic country, in which roasted parts of sentences fly into your mouth</p>
       </div>
+
       <div>
         <p>Far far away, behind the word mountains, far from the coountries Vokalia and Cononantia, there live the blind
           texts.
           Seprated they live in bookmarksgroove right at the coast of the semantics, a large language ocean.
         </p>
       </div>
+
+      <div>
+        <img src="pic.png" alt="">
+        <p>Learn anything form studylab, watch video</p>
+      </div>
     </div>
 
-    <div id="main-container-3">
+    <div id="container-2">
       <div>
         <div>
-          <img src="" alt="">
-          <p>Top quality Content</p>
+          <img src="top quality content.png" alt="">
+          <h3>Top Quality Content</h3>
           <p> A small river named Duden flows by their place and supplies</p>
         </div>
   
         <div>
-          <img src="" alt="">
-          <p>Highly Skilles Instructor</p>
+          <img src="highly skilled.png" alt="">
+          <h3>Highly Skilles Instructor</h3>
           <p>A small river named Duden flows by their place and supplies</p>
         </div>
       </div>
 
       <div>
         <div>
-          <img src="" alt="">
-          <p>World Class & Quiz</p>
+          <img src="world class &.png" alt="">
+          <h3>World Class & Quiz</h3>
           <p>A small river named Duden flows by their place and supplies</p>
         </div>
   
-        <div> <img src="" alt="">
-          <p>Get Certified</p>
+        <div> <img src="get certified.png" alt="">
+          <h3>Get Certified</h3>
           <p>A small river named Duden flows by their place and supplies</p>
         </div>
       </div>

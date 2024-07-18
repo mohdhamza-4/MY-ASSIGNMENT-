@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Problem 6</title>
+  <style>
+    #main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #main>h1{
+      margin-bottom:70px;
+      color: teal;
+      font-size: 46px;
+
+    }
+    #calculator{
+      border:1px solid rgba(196, 196, 196, 0.804);
+      padding: 45px 45px;
+      width: max-content;
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: repeat(5, 60px);
+      gap: 7px;
+      
+    }
+
+    #calculator>div{
+      border:1px solid rgba(196, 196, 196, 0.505);
+      text-align: center;
+      padding: 20px;
+      border-radius: 6px;
+      font-weight: bolder;
+      font-size: 20px;
+    }
+
+    #calculator :nth-child(1){
+      grid-area: 1/1/2/5;
+      margin-bottom: 5px;
+    }
+
+    #calculator :nth-child(5){
+      color: white;
+      background-color: black;
+    }
+
+    #calculator :nth-child(9){
+      color: white;
+      background-color: black;
+    }
+
+    #calculator :nth-child(13){
+      color: white;
+      background-color: black;
+    }
+
+    #calculator :nth-child(16){
+      color: white;
+      background-color: black;
+    }
+
+    #calculator :nth-child(17){
+      color: white;
+      background-color: black;
+    }
+
+    #calculator :nth-child(14){
+      color: white;
+      background-color: red;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div id="main">
+    <h1>Masai Calculator</h1>
+  <div id="calculator">
+    <div></div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>+</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>-</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>x</div>
+    <div>C</div>
+    <div>0</div>
+    <div>=</div>
+    <div>/</div>
+  </div>
+  </div>
+  
+</body>
+
+</html>

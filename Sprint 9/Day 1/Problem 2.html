@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 2</title>
+  <style>
+    #main-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    #main-box>h1{
+      color: rgb(199, 153, 38);
+      font-size: 65px;
+      margin: 0;
+    }
+    #main-box>p{
+      width: 700px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 25px;
+    }
+    #box{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 340px);
+      grid-template-rows: repeat(1, 360px);
+      gap: 15px;
+      text-align: center;
+    }
+    @media all and (min-width: 750px) and (max-width: 900px){
+      #box{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 340px);
+      grid-template-rows: repeat(2, 360px);
+      gap: 15px;
+      text-align: center;
+    }
+  }
+
+    @media all and (max-width: 749px){
+      #box{
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(1, 340px);
+      grid-template-rows: repeat(3, 360px);
+      gap: 15px;
+      text-align: center;
+    }
+    }
+
+    
+
+    #box>div>h1{
+      font-size: 26px;
+      font-weight: bolder;
+    }
+
+    #box>div>h3{
+      font-size: 17px;
+      font-weight: bolder;
+      color: rgb(233, 179, 43);
+    }
+
+    #box>div>img{
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main-box">
+    <h1>Rooms & Suites</h1>
+    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+    
+    <div id="box">
+
+      <div>
+        <img src="https://preview.colorlib.com/theme/sogo/images/img_1.jpg" alt="">
+        <h1>Single Room</h1>
+        <h3>90$ / PER NIGHT</h3>
+
+      </div>
+
+      <div>
+        <img src="https://preview.colorlib.com/theme/sogo/images/img_2.jpg" alt="">
+        <h1>Family Room</h1>
+        <h3>120$ / PER NIGHT</h3>
+      </div>
+
+      <div>
+        <img src="https://preview.colorlib.com/theme/sogo/images/img_3.jpg" alt="">
+        <h1>Presidential Room</h1>
+        <h3>250$ / PER NIGHT</h3>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

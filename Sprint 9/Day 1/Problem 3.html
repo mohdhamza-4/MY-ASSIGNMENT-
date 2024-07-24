@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 3</title>
+  <style>
+    #box{
+      display: grid;
+      grid-template-columns: repeat(2, 600px);
+      grid-template-rows: 80px 500px;
+      gap: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-areas: 
+      "ylw ylw"
+      "rd grn";
+    }
+
+    @media all and (max-width: 749px) {
+      #box{
+      display: grid;
+      grid-template-columns: repeat(1, 550px);
+      grid-template-rows: 80px repeat(2, 200px);
+      gap: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-areas: 
+      "ylw"
+      "rd"
+      "grn";
+      }
+
+      
+    #box>:nth-child(2){
+      background-color: red;
+      grid-area: rd;
+      margin-right: 0px;
+      color: rgb(110, 109, 109);
+      padding: 15px;
+      font-size: 28px;
+
+    }
+
+    #box>:nth-child(3){
+      background-color: rgb(114, 227, 9);
+      grid-area: grn;
+      margin-left: 30px;
+      color: rgb(110, 109, 109);
+      padding: px;
+      font-size: 28px;
+    }
+      
+    }
+
+    #box>:nth-child(1){
+      background-color: yellow;
+      grid-area: ylw;
+      font-size: 55px;
+      padding: 10px;
+   
+    }
+
+    #box>:nth-child(2){
+      background-color: red;
+      grid-area: rd;
+      margin-right: 30px;
+      color: rgb(110, 109, 109);
+      padding: 15px;
+      font-size: 28px;
+
+    }
+
+    #box>:nth-child(3){
+      background-color: rgb(114, 227, 9);
+      grid-area: grn;
+      margin-left: 30px;
+      color: rgb(110, 109, 109);
+      padding: 15px;
+      font-size: 28px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div>Navigation</div>
+    <div>LEFT BOX</div>
+    <div>RIGHT BOX</div>
+  </div>
+</body>
+
+</html>

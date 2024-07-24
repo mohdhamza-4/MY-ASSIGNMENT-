@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem 4</title>
+  <style>
+     #box{
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      grid-template-rows: 80px repeat(3, 120px);
+      gap: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-areas: 
+      "yel yel yel"
+      "rd rd grn1"
+      "rd rd grn2"
+      "rd rd grn3";
+     }
+
+     @media all and (min-width:750px) and (max-width: 950px) {
+      #box{
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      grid-template-rows: 80px repeat(3, 120px);
+      gap: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-areas: 
+      "yel yel yel"
+      "rd rd rd"
+      "rd rd rd"
+      "grn1 grn2 grn3";
+     }
+     }
+
+     
+     @media all and (max-width:749px){
+      #box{
+      display: grid;
+      grid-template-columns: repeat(1, 290px);
+      grid-template-rows: 80px  180px repeat(3, 120px);
+      gap: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-template-areas: 
+      "yel"
+      "rd"
+      "grn1"
+      "grn2"
+      "grn3";
+     }
+
+    
+     }
+
+     #box :nth-child(1){
+      background-color: yellow;
+      grid-area: yel;
+      font-size: 50px;
+      padding: 10px;
+    }
+     #box :nth-child(2){
+       background-color: red;
+       color: rgb(90, 87, 87);
+       grid-area: rd;
+       padding: 10px;
+       font-size: 20px;
+     }
+     #box :nth-child(3){
+      background-color: rgb(16, 212, 16);
+      grid-area: grn1;
+      padding: 10px;
+      font-size: 20px;
+      color: rgb(90, 87, 87);
+    }
+    #box :nth-child(4){
+      background-color: rgb(16, 212, 16);
+      grid-area: grn2;
+      padding: 10px;
+      font-size: 20px;
+      color: rgb(90, 87, 87);
+    }
+    #box :nth-child(5){
+      background-color: rgb(16, 212, 16);
+      grid-area: grn3;
+      padding: 10px;
+      font-size: 20px;
+      color: rgb(90, 87, 87);
+    }
+   
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div>Navigation</div>
+    <div>LEFT BOX </div>
+    <div>RIGHT BOX 1</div>
+    <div>RIGHT BOX 2</div>
+    <div>RIGHT BOX 3</div>
+  </div>
+</body>
+
+</html>

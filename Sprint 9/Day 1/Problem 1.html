@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Problem 4</title>
+  <style>
+    body{
+      background-color: rgb(242, 236, 236);
+      
+    }
+
+    #main-div{
+      display: grid;
+      grid-template-columns: repeat(3, 350px);
+      grid-template-rows: repeat(3, 150px);
+      gap: 30px;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    @media all and (min-width: 745px) and (max-width: 900px) {
+      #main-div{
+      grid-template-columns: repeat(2, 350px);
+      grid-template-rows: repeat(5, 150px);
+
+  }
+}
+
+    @media all and (max-width: 744px) {
+      #main-div{
+      margin-top: 70px;
+      grid-template-columns: repeat(1, 350px);
+      grid-template-rows: repeat(9, 150px);
+    }
+    }
+
+    #main-div>div{
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      
+    }
+
+    #main-div>div>div{
+      display: flex;
+      justify-content: space-between;
+    }
+    #main-div>div>div>h3{
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    #main-div>div>div>h3~h3{
+      color: rgb(206, 175, 0);
+    }
+
+    #main-div>div>p{
+      color: grey;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 25px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <div id="main-div">
+    <div>
+      <div><h3>Cappuchino</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Americano</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Espresso</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Macchiato</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Mocha</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Coffe Latte</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Piccolo Latte</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Ristretto</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+     <div>
+      <div><h3>Affogato</h3> <h3>$49</h3></div>
+      <p>Usage of the internet is becoming more common due to rapid advance</p>
+     </div>
+
+  </div>
+</body>
+
+</html>

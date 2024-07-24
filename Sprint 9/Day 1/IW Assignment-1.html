@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IW Assignment-1</title>
+  <style>
+    #box{
+      display: grid;
+      grid-template-columns: repeat(4, 300px);
+      grid-template-rows: 80px 250px;
+      gap: 26px;
+      grid-template-areas: 
+      "Navigation Navigation Navigation Navigation"
+      "box1 box2 box3 box4";
+      padding: 20px;
+      font-size: 40px;
+    }
+
+    #box>div{
+      padding: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #box> :nth-child(1){
+      background-color: yellow;
+      grid-area: Navigation;
+    }
+
+    #box>:nth-child(2){
+      background-color: red;
+      grid-area: box1;
+      font-size: 25px;
+      color: grey;
+    }
+
+    #box>:nth-child(3){
+      background-color: lightgreen;
+      grid-area: box2;
+      font-size: 25px;
+      color: grey;
+    }
+
+    #box>:nth-child(4){
+      background-color: lightblue;
+      grid-area: box3;
+      font-size: 25px;
+      color: grey;
+    }
+
+    #box>:nth-child(5){
+      background-color: grey;
+      grid-area: box4;
+      font-size: 25px;
+      color: rgb(49, 47, 47);
+    }
+
+    /* for medium screen: tablet */
+
+    @media all and (min-width: 345px) and (max-width: 900px){
+      #box{
+      grid-template-columns: repeat(2, 300px);
+      grid-template-rows: 80px repeat(2, 250px);
+      gap: 26px;
+      grid-template-areas: 
+      "Navigation Navigation"
+       "box1 box2"
+       "box3 box4";
+      padding: 20px;
+      font-size: 40px;
+    }
+
+    #box>div{
+      margin-right: 20px;
+    }
+
+    }
+
+    /* for small screen: phones */
+
+    @media all and (max-width: 749px){
+      #box{
+      grid-template-columns: repeat(1, 250px);
+      grid-template-rows: 80px repeat(4, 100px);
+      gap: 26px;
+      grid-template-areas: 
+      "Navigation"
+       "box1"
+       "box2"
+       "box3"
+       "box4";
+      padding: 20px;
+      font-size: 40px;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box">
+    <div>Navigation</div>
+    <div>Box 1</div>
+    <div>Box 2</div>
+    <div>Box 3</div>
+    <div>Box 4</div>
+  </div>
+  
+</body>
+
+</html>

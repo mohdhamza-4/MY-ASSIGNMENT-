@@ -18,8 +18,9 @@
       display: grid;
       grid-template-columns: repeat(3, 380px);
       grid-template-rows: repeat(1, 180px);
-      gap: 20px;
+      gap: 25px;
       justify-content: center;
+      flex-wrap: wrap;
     }
 
     #Top-box>div{
@@ -31,12 +32,24 @@
       height: 100%;
     }
 
+    /* Bottom-box */
+
+    #main-container>div>h1{
+      text-align: center;
+      font-size: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     #Bottom-box{
       display: grid;
       grid-template-columns: repeat(4, 300px);
       grid-template-rows: repeat(5, 410px);
-      gap: 20px;
+      gap: 30px;
+      flex-wrap: wrap;
       justify-content: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+
 
     }
 
@@ -49,6 +62,8 @@
     #Bottom-box>div>img{
       height: 70%;
       width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
     }
 
     #Bottom-box>div>h4{
@@ -57,14 +72,51 @@
 
     #Bottom-box>div>p{
       margin: 0;
+      color: grey;
     }
 
     #Bottom-box>div>p~img{
-      width: 150px;
-      height: 60px;
+      width: 120px;
+      height: 50px;
      
     }
 
+ /* Media Query */
+
+ @media all and (min-width: 768px) and (max-width: 1024px) {
+
+  #Bottom-box{
+
+      grid-template-columns: repeat(3, 255px);
+      grid-template-rows: repeat(7, 370px);
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    #Top-box{
+      grid-template-columns: repeat(3, 220px);
+      grid-template-rows: repeat(1, 145px);
+      gap: 30px;
+    }
+ }
+
+ @media all and (max-width: 767px){
+
+#Bottom-box{
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(10, 410px);
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  #Top-box{
+      grid-template-columns: repeat(1, 405px);
+      grid-template-rows: repeat(3, 162px);
+      gap: 20px;
+      margin-top: 0px;
+    }
+
+}
 
   </style>
 </head>
@@ -79,8 +131,9 @@
     <div><img src="https://www.masaischool.com/images/our-investors/capria-logo.svg" alt=""></div>
     <div><img src="https://www.masaischool.com/images/our-investors/omidyar-borderless.svg" alt=""></div>
   </div>
-
+<div> <h1>Strategic Investors</h1></div>
   <div id="Bottom-box">
+   
     <div>
       <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg" alt="">
       <h4>Vijay Shekhar Sharma</h4>
@@ -105,7 +158,7 @@
     <div>
       <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg" alt="">
       <h4>Sampad Swain</h4>
-      <p>Founder & CEO</p>
+      <p>Co-Founder & CEO</p>
       <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png" alt="">
     </div>
 

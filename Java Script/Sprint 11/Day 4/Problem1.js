@@ -1,2 +1,2 @@
-var __name = prompt('Enter your name')
+var __name = "Hamza"
 console.log("Good morning "+ __name)

@@ -10,6 +10,6 @@ var l = 40
 var w = 50
 var area = l * w
 
-console.log("length",l)
-console.log("width",w)
-console.log("area of rectangle = ", area) 
+console.log("Input length: ",l)
+console.log("Input width: ",w)
+console.log("Area of rectangle = ", area) 
